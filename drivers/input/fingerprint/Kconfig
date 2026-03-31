@@ -17,5 +17,11 @@ menuconfig INPUT_FINGERPRINT
 
 if INPUT_FINGERPRINT
 
+source "drivers/input/fingerprint/goodix_fod/Kconfig"
+source "drivers/input/fingerprint/goodix_cap/Kconfig"
+source "drivers/input/fingerprint/xiaomi_fp/Kconfig"
 source "drivers/input/fingerprint/mi_fp/Kconfig"
+source "drivers/input/fingerprint/mi_fp_ultra/Kconfig"
+source "drivers/input/fingerprint/fpc_fod/Kconfig"
+source "drivers/input/fingerprint/fpc_1553/Kconfig"
 endif
